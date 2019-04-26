@@ -25,7 +25,8 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm-run-all build-css build-js",
-    "test": "react-scripts test",
+    "unit:test": "react-scripts test",
+    "unit:test:coverage": "react-scripts test --coverage",
     "e2e:test": "./node_modules/.bin/testcafe firefox src/tests/__e2e__/",
     "eject": "react-scripts eject",
     "start:testing": "env-cmd .env.development npm run start",
@@ -60,9 +61,6 @@
     "collectCoverageFrom": [
       "**/*.{js,jsx}",
       "!**/node_modules/**",
-      "!**/dist/**",
-      "!**/vendor/**",
-      "!**/server/**",
       "!**/public/**"
     ]
   }
