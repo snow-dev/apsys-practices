@@ -1,7 +1,9 @@
-
+/** Import react section **/
 import React from 'react';
+
+/** Import resources section **/
 import logo from './resources/images/logo.svg';
-import './resources/styles/App.scss';
+import './resources/styles/_index.css';
 
 function App() {
   return (
