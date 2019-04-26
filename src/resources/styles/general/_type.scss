@@ -1,0 +1,85 @@
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: $primary;
+    margin: 0;
+}
+
+h1 {
+    @include xl-desktop {
+        font-size: 2.5rem;
+    }
+    @include md-desktop {
+        font-size: 2.2rem;
+    }
+    @include sm-desktop {
+        font-size: 2rem;
+    }
+    @include mobiles {
+        font-size: 1.6rem;
+    }
+}
+
+h2 {
+    @include xl-desktop {
+        font-size: 2rem;
+    }
+    @include md-desktop {
+        font-size: 1.9rem;
+    }
+    @include sm-desktop {
+        font-size: 1.6rem;
+    }
+    @include mobiles {
+        font-size: 1.4rem;
+    }
+}
+
+h3 {
+    @include xl-desktop {
+        font-size: 1.8rem;
+    }
+    @include md-desktop {
+        font-size: 1.6rem;
+    }
+    @include sm-desktop {
+        font-size: 1.3rem;
+    }
+    @include mobiles {
+        font-size: 1.1rem;
+    }
+}
+
+h4,h5  {
+    @include xl-desktop {
+        font-size: 1.5rem;
+    }
+    @include md-desktop {
+        font-size: 1.3rem;
+    }
+    @include sm-desktop {
+        font-size: 1.1rem;
+    }
+    @include mobiles {
+        font-size: 1rem;
+    }
+}
+
+p, li  {
+    color: $text;
+    @include xxl-desktop {
+        font-size: 1.1rem;
+    }
+    @include xl-desktop {
+        font-size: 1rem;
+    }
+    @include md-desktop {
+        font-size: 1rem;
+    }
+    @include sm-desktop {
+        font-size: 0.9rem;
+    }
+    @include mobiles {
+        font-size: 0.8rem;
+    }
+}

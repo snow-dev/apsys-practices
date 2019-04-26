@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: white;
+  &__items {
+    margin-right: auto;
+  }
+  img {
+    height: 3rem;
+    display: block;
+    padding: 1rem 0;
+  }
+  ul {
+    text-align: center;
+    margin-left: auto;
+    li {
+      display: inline-block;
+      padding: 0 1rem;
+    }
+  }
+}

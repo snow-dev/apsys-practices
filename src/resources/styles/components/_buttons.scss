@@ -1,0 +1,16 @@
+.btn {
+    font-size: 0.9rem;
+    font-weight: 800;
+    padding: 0.8rem;
+    border-radius: 10px;
+    color: white;
+    &__primary {
+        background-color: $primary;
+        color: white;
+    }
+    &__primary-outline {
+        background-color: transparent;
+        color: $primary;
+        border: solid 1px $primary;
+    }
+}
