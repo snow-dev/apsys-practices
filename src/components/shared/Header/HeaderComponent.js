@@ -23,15 +23,26 @@ class HeaderComponent extends Component {
     autoBind(this);
   }
   
-  
   render() {
     return (
-      <div className="header-component">
-        <h2>header-component</h2>
+      <div className="header">
+        <img alt="shelfish-logo" src="https://res.cloudinary.com/shelfish/image/upload/v1556046743/Shelfish/shelfish-logo.svg"/>
+        <ul>
+          <li>Nuestra tienda</li>
+          <li>Contacto</li>
+        </ul>
+        <button className="btn btn__primary-outline"
+                onClick={this.props.loginHandler}>
+          {
+            this.props.isLogged === false ? 'Log In' : "Log Out"
+          }
+        </button>
       </div>
     );
   }
 }
+
+
 
 /**
  * Validate properties that component needs.

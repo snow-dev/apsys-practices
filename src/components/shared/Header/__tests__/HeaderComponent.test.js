@@ -31,7 +31,18 @@ describe('HeaderComponent', () => {
   /**
    * After each test we unmount component, to avoid garbage on the next tests.
    */
-  it('should render a header .header-component element', () => {
-    expect(wrapper.find('.header-component').length).toEqual(1);
+  it('should render a header .header element', () => {
+    expect(wrapper.find('.header').length).toEqual(1);
+  });
+  it('should have a img element', () => {
+    expect(wrapper.find('img').length).toEqual(1);
+  });
+  
+  it('should render an ul list element', () => {
+    expect(wrapper.find('ul').length).toEqual(1);
+  });
+  
+  it('should render two li items', () => {
+    expect(wrapper.find('li').length).toEqual(2);
   });
 });
