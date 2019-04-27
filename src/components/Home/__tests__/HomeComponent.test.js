@@ -7,7 +7,8 @@ import React from 'react';
 import {shallow} from 'enzyme';
 
 /** Components section import **/
-import HomeComponent from '../HomeComponent';
+import {HomeComponent} from '../HomeComponent';
+
 
 describe('HomeComponent', () => {
   let wrapper;
@@ -32,7 +33,12 @@ describe('HomeComponent', () => {
    * After each test we unmount component, to avoid garbage on the next tests.
    */
   it('should render a header home element', () => {
-    console.log(wrapper.debug()).dive();
-    expect(wrapper.find('home').length).toEqual(1);
+    // We show  the wrapper value on terminal,
+    // debug() help us to quickly show which wrong with our assertions.
+    // console.log(wrapper.debug());
+    // -> Now we can easily look for .home element using its className.
+    expect(wrapper.find('.home').length).toEqual(1);
   });
 });
+
+

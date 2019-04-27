@@ -18,7 +18,7 @@ import HomeComponent from './HomeComponent';
 /** Import UI components **/
 
 
-class HomeContainer extends Component {
+export class HomeContainer extends Component {
   constructor(props) {
     super(props);
     autoBind(this);

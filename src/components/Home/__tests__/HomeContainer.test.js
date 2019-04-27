@@ -31,6 +31,7 @@ describe('HomeContainer', () => {
    * After each test we unmount component, to avoid garbage on the next tests.
    */
   it('should render a  component', () => {
+    expect.assertions(1);
     expect(wrapper.find('HomeComponent').length).toEqual(1);
   });
 });

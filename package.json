@@ -60,6 +60,7 @@
   "jest": {
     "collectCoverageFrom": [
       "**/*.{js,jsx}",
+      "**/src/*.js",
       "!**/node_modules/**",
       "!**/public/**"
     ]

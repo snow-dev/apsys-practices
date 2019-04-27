@@ -34,6 +34,7 @@ describe('HeaderComponent', () => {
   it('should render a header .header element', () => {
     expect(wrapper.find('.header').length).toEqual(1);
   });
+  
   it('should have a img element', () => {
     expect(wrapper.find('img').length).toEqual(1);
   });
@@ -46,3 +47,5 @@ describe('HeaderComponent', () => {
     expect(wrapper.find('li').length).toEqual(2);
   });
 });
+
+

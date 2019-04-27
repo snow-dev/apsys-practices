@@ -17,7 +17,7 @@ import {withLocalize} from 'react-localize-redux';
 /** Import UI components **/
 
 
-class HomeComponent extends Component {
+export class HomeComponent extends Component {
   constructor(props) {
     super(props);
     autoBind(this);
