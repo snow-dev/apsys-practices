@@ -2,17 +2,18 @@
 import React from 'react';
 
 /** Import resources section **/
-import './resources/styles/_index.css';
+import './resources/styles/App.css';
 
 /** Import component section **/
 import HeaderContainer from './components/shared/Header/HeaderContainer';
 import Footer from './components/shared/Footer/Footer';
+import WorkspaceComponent from './components/shared/Workspace/WorkspaceComponent';
 
 function App() {
   return (
     <div className="app-container">
       <HeaderContainer/>
-      {/*<WorkspaceComponent/>*/}
+      <WorkspaceComponent/>
       <Footer/>
     </div>
   );

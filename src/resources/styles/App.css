@@ -146,6 +146,7 @@ body {
   font-size: 0.9rem;
   font-weight: 800;
   padding: 0.8rem;
+  text-align: center;
   border-radius: 10px;
   color: white; }
   .btn__primary {
@@ -158,18 +159,31 @@ body {
 
 .store__header {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-template-rows: 15rem;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media (min-width: 992px) {
     .store__header {
       background-image: url("https://res.cloudinary.com/shelfish/image/upload/v1556059560/Shelfish/shelfish-banner.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
       padding: 8rem; } }
+  @media (min-width: 320px) and (max-width: 1024px) {
+    .store__header {
+      background-image: url("https://res.cloudinary.com/shelfish/image/upload/v1556125508/Shelfish/mobile-bg.jpg");
+      padding: 4rem; } }
   .store__header .header-text {
     display: flex;
     flex-direction: column; }
+    @media (min-width: 992px) {
+      .store__header .header-text {
+        justify-self: end; } }
+    @media (min-width: 320px) and (max-width: 1024px) {
+      .store__header .header-text {
+        text-align: center; } }
+    @media (min-width: 992px) {
+      .store__header .header-text .btn {
+        width: 30%; } }
 
 .store__overview {
   display: grid;
@@ -203,20 +217,42 @@ body {
     width: 100%; }
 
 .store__promotions {
-  column-count: 1;
-  column-gap: 20px;
-  margin: 20px; }
+  display: grid;
+  grid-auto-columns: 10rem;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px; }
+  @media (min-width: 992px) {
+    .store__promotions {
+      margin: 5% 15%; } }
+  @media (min-width: 320px) and (max-width: 1024px) {
+    .store__promotions {
+      margin: 5% 0; } }
   .store__promotions .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: #82bef6;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     -webkit-column-break-inside: avoid;
-    padding: 24px;
+    padding: 4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     box-sizing: border-box; }
   .store__promotions .card:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.24) 3%, #00000066 100%), url("https://res.cloudinary.com/shelfish/image/upload/v1556142749/Shelfish/shelfish-bg-01.jpg");
     height: 200px; }
   .store__promotions .card:nth-child(2) {
-    height: 100px; }
+    background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.24) 3%, #00000066 100%), url("https://res.cloudinary.com/shelfish/image/upload/v1556143694/Shelfish/shelfish-salad.jpg");
+    height: 200px; }
+  .store__promotions .card:nth-child(3) {
+    background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.24) 3%, #00000066 100%), url("https://res.cloudinary.com/shelfish/image/upload/v1556145880/Shelfish/shelfish-04.jpg");
+    height: 200px; }
+  .store__promotions .card:nth-child(4) {
+    background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.24) 3%, #00000066 100%), url("https://res.cloudinary.com/shelfish/image/upload/v1556146117/Shelfish/shelfish-05.jpg");
+    height: 200px; }
+  .store__promotions .card:nth-child(5) {
+    background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.24) 3%, #00000066 100%), url("https://res.cloudinary.com/shelfish/image/upload/v1556146300/Shelfish/shelfish-06.jpg");
+    height: 200px; }

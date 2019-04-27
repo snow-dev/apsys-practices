@@ -13,6 +13,7 @@ import {withLocalize} from 'react-localize-redux';
 /** Import helpers section **/
 
 /** Import resources section **/
+import yarn from '../../../resources/images/yarn.svg';
 
 /** Import UI components **/
 
@@ -26,7 +27,7 @@ class HeaderComponent extends Component {
   render() {
     return (
       <div className="header">
-        <img alt="shelfish-logo" src="https://res.cloudinary.com/shelfish/image/upload/v1556046743/Shelfish/shelfish-logo.svg"/>
+        <img alt="shelfish-logo" src={yarn}/>
         <ul>
           <li>Nuestra tienda</li>
           <li>Contacto</li>

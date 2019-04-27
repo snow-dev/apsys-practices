@@ -56,4 +56,4 @@ export class HomeComponent extends Component {
  */
 HomeComponent.propTypes = {};
 
-export default withLocalize(HomeComponent);
+export default HomeComponent;

@@ -3,19 +3,34 @@
 
   &__header {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-template-rows: 15rem;
     justify-content: space-between;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     @include desktop {
       background-image: url('https://res.cloudinary.com/shelfish/image/upload/v1556059560/Shelfish/shelfish-banner.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
       padding: 8rem;
+    }
+    @include mobiles {
+      background-image: url('https://res.cloudinary.com/shelfish/image/upload/v1556125508/Shelfish/mobile-bg.jpg');
+      padding: 4rem;
     }
     .header-text {
       display: flex;
       flex-direction: column;
+      @include desktop {
+        justify-self: end;
+      }
+      @include mobiles{
+        text-align: center;
+      }
+      .btn {
+        @include desktop {
+          width: 30%;
+        }
+      }
     }
   }
 
@@ -59,28 +74,52 @@
   }
 
   &__promotions {
-    column-count: 1;
-    column-gap: 20px;
-    margin: 20px;
+    display: grid;
+    grid-auto-columns: 10rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    @include desktop {
+      margin: 5% 15%;
+    }
+    @include mobiles {
+      margin: 5% 0;
+    }
 
     .card {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
-      background-color: #82bef6;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       -webkit-column-break-inside: avoid;
-      padding: 24px;
+      padding: 4rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       box-sizing: border-box;
     }
 
     .card:first-child {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.24) 3%, #00000066 100%), url('https://res.cloudinary.com/shelfish/image/upload/v1556142749/Shelfish/shelfish-bg-01.jpg');
       height: 200px;
     }
-
-    .card:nth-child(2){
-      height: 100px;
+    .card:nth-child(2) {
+      background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.24) 3%, #00000066 100%), url('https://res.cloudinary.com/shelfish/image/upload/v1556143694/Shelfish/shelfish-salad.jpg');
+      height: 200px;
+    }
+    .card:nth-child(3) {
+      background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.24) 3%, #00000066 100%), url('https://res.cloudinary.com/shelfish/image/upload/v1556145880/Shelfish/shelfish-04.jpg');
+      height: 200px;
+    }
+    .card:nth-child(4) {
+      background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.24) 3%, #00000066 100%), url('https://res.cloudinary.com/shelfish/image/upload/v1556146117/Shelfish/shelfish-05.jpg');
+      height: 200px;
+    }
+    .card:nth-child(5) {
+      background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.24) 3%, #00000066 100%), url('https://res.cloudinary.com/shelfish/image/upload/v1556146300/Shelfish/shelfish-06.jpg');
+      height: 200px;
     }
   }
 
