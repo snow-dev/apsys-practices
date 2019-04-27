@@ -25,6 +25,9 @@ describe('HomeComponent', () => {
     );
   });
   
+  /**
+   * After each test we unmount component, to avoid garbage on the next tests.
+   */
   afterEach(() => {
     wrapper.unmount();
   });
@@ -37,7 +40,18 @@ describe('HomeComponent', () => {
     // debug() help us to quickly show which wrong with our assertions.
     // console.log(wrapper.debug());
     // -> Now we can easily look for .home element using its className.
-    expect(wrapper.find('.home').length).toEqual(1);
+    expect(wrapper.find('.store').length).toEqual(1);
+  });
+  
+  it('should render a store__header div element', () => {
+    expect(wrapper.find('.store__header').length).toEqual(1);
+  });
+  
+  it('should contain a store__overview element', () => {
+    expect(wrapper.find('.store__header').length).toEqual(1);
+  });
+  it('should contain a store__promotions', () => {
+    expect(wrapper.find('.store__categories').length).toEqual(1);
   });
 });
 
