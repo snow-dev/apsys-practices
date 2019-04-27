@@ -31,6 +31,6 @@ describe('WorkspaceContainer.test', () => {
    * After each test we unmount component, to avoid garbage on the next tests.
    */
   it('should render a WorkspaceContainer component', () => {
-    expect(wrapper.find('WorkspaceComponent').length).toEqual(1);
+    expect(wrapper.find('HomeContainer').length).toEqual(1);
   });
 });
