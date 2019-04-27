@@ -3,7 +3,7 @@
 /** Import react section **/
 import React, {Component} from 'react';
 import autoBind from 'react-autobind';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 /** Language imports **/
 import {withLocalize} from 'react-localize-redux';

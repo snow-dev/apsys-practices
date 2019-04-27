@@ -26,8 +26,25 @@ export class HomeComponent extends Component {
   
   render() {
     return (
-      <div className="home">
-        <h2>home-component</h2>
+      <div className="store">
+        <div className="store__header">
+          <div className="header-text">
+            <h1>Hungry?</h1>
+            <h3>Don’t worry. We got you covered.</h3>
+            <p>Order now and we’ll send your food from our nearest restaurant so you can eat ASAP</p>
+            <div className="btn btn__primary">Order now</div>
+          </div>
+        </div>
+        <div className="store__categories">
+          <div className="card">Card 1</div>
+          <div className="card">Card 2</div>
+          <div className="card">Card 3</div>
+          <div className="card">Card 3</div>
+          <div className="card">Card 3</div>
+        </div>
+        <div className="store__carousel">
+          <h2>Here should be a carousel xD</h2>
+        </div>
       </div>
     );
   }
